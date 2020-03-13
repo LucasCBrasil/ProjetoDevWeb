@@ -1,28 +1,71 @@
 <html> 
+<style>
+    /* Add a black background color to the top navigation */
+.topnav {
+  background-color:skyblue;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: blue;
+  color: white;
+}
+</style>
 <head>
-    VerCarros - O lugar ideal para encontrar seu próximo carro
-    <br>
-    <br>
+    <title>VerCarros - O lugar ideal para encontrar seu próximo carro</title>
+    <div class="topnav">
+            <div><b>VerCarros</b></div> 
+            <a href="#home" style="margin-left:95%; margin-top:-25px">Login</a>
+    </div> 
 </head>
 <body>
-    Lista de Carros disponíveis para venda
-    <ul>
-        <li>
-            <div>Ford Fiesta</div>
-            <div>Cor: Preto</div>
-            <div>Ano de Fabricação: 2013</div>
-            <div>Quilômetros rodados: 40000 km</div>
-            <div>Preço: R$12.999,00</div>
-        </li>
-        <br>
-        <li>
-            <div>Hyundai ix35</div>
-            <div>Cor: Branco</div>
-            <div>Ano de Fabricação: 2016</div>
-            <div>Quilômetros rodados: 12400 km</div>
-            <div>Preço: R$ 42.900,00</div>
-        </li>
-    </ul>
+    <p style="margin-left:40%"><b>Lista de Carros disponíveis para venda</b></p>
+
+    <div style="display:grid; grid-column-gap: 50px; grid-row-gap: 50px; grid-template-columns: auto auto auto auto">
+
+        <div class="grid-item">
+            <b>Ford Fiesta</b>
+            <img src="sobre-fiesta-rocam.jpg" style="height:100px; width: 160px">
+            <button>Detalhes</button>
+        </div>
+        <div class="grid-item">
+            <b>Hyundai ix35</b>
+            <button>Detalhes</button>
+        </div> 
+        <div class="grid-item">
+            <b>Toyota Corolla</b>
+            <button>Detalhes</button>
+        </div>  
+        <div class="grid-item">
+            <b>Ford EcoSport</b>
+            <button>Detalhes</button>
+         </div>  
+        <div class="grid-item">
+            <b>Chevrolet Onix</b>
+            <button>Detalhes</button>
+        </div>  
+        <div class="grid-item">
+            <b>Fiat Mobi</b>
+            <button>Detalhes</button>
+        </div>   
+    </div>
 </body>
 
 </html>
